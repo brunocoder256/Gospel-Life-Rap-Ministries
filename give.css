@@ -1,0 +1,125 @@
+/* Give Section Styles */
+.give-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.give-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.05), rgba(255, 215, 0, 0.05));
+    z-index: 0;
+}
+
+.give-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.give-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.give-text {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.payment-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(138, 43, 226, 0.1);
+    transition: all 0.3s ease;
+    max-width: 300px;
+    width: 100%;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.payment-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.payment-card p {
+    font-size: 1.1rem;
+    color: #8a2be2;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.donate-btn {
+    background: linear-gradient(135deg, #8a2be2, #ffd700);
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.donate-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .give-section {
+        padding: 2rem 1rem;
+    }
+
+    .give-heading {
+        font-size: 2rem;
+    }
+
+    .give-text {
+        font-size: 1rem;
+    }
+
+    .payment-options {
+        gap: 1rem;
+    }
+
+    .payment-card {
+        padding: 1.5rem;
+    }
+
+    .donate-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
